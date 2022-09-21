@@ -11,7 +11,13 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  var soloNros = [];
+  for (var i = 0; i < array.length; i++ ) {
+         if (Number.isInteger(array[i]) ) {
+            soloNros.push(array[i]);
+         }
+  }
+  return soloNros;
 }
 
 // No modifiques nada debajo de esta linea //
