@@ -12,8 +12,17 @@ function numeroSimetrico(num) {
   // Ej:
   // numeroSimetrico(11711) devuelve true
 
-  // Tu código:
+    var textt = num.toString();
+    var palabraInvertida = '';
+    for(var i = textt.length - 1; i>=0; i--) {
+      palabraInvertida += textt[i];
+    }
+    return num == palabraInvertida;
 
+/*let cadena= num.toString();
+  let cadenaInvertida = "";
+  cadenaInvertida = cadena.split("").reverse().join("");
+	return cadena == cadenaInvertida; */
 }
 
 // No modifiques nada debajo de esta linea //
